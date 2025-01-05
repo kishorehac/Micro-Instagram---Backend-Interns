@@ -1,4 +1,4 @@
-# TheChefKart - Backend System
+# TheChefKart(micro-instagram-backend) - Backend System
 
 This project is a custom backend system designed for a simplified version of an Instagram-like application, built using Node.js, Express.js, Sequelize (for ORM), and SQLite. It includes RESTful APIs to manage users and posts, a relational database schema, and unit tests for API endpoints.
 
@@ -24,7 +24,7 @@ This project is a custom backend system designed for a simplified version of an 
 
 1. **Navigate to the project directory:**
     ```bash
-    cd the-chef-kart
+    cd micro-instagram-backend
     ```
 
 2. **Install the dependencies:**
@@ -160,7 +160,7 @@ bash
 npm test
 Ensure that all endpoints are covered, and tests check for edge cases, error handling, and proper responses.
 
-
+###
 Contributing
 Feel free to fork this repository and submit pull requests. Please ensure you follow the code standards and provide appropriate tests for new features or bug fixes.
 
