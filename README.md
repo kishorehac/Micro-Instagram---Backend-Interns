@@ -1,54 +1,55 @@
-TheChefKart(micro-instagram-backend) - Backend System
+# TheChefKart - Backend System
+
 This project is a custom backend system designed for a simplified version of an Instagram-like application, built using Node.js, Express.js, Sequelize (for ORM), and SQLite. It includes RESTful APIs to manage users and posts, a relational database schema, and unit tests for API endpoints.
 
-Table of Contents
-Installation
+## Table of Contents
 
-Project Setup
+- Installation
+- Project Setup
+- API Documentation
+- Testing
+- Deployment
+- Contributing
+- License
 
-API Documentation
+## Installation
 
-Testing
+### Prerequisites
 
-Deployment
+- Node.js (v14 or higher)
+- SQLite (database will be created locally by Sequelize)
+- Any IDE or code editor (e.g., VS Code)
 
-Contributing
+### Steps to Install
 
-License
+1. **Navigate to the project directory:**
+    ```bash
+    cd the-chef-kart
+    ```
 
-Installation
-Prerequisites
-Node.js(v14 or higher)
+2. **Install the dependencies:**
+    ```bash
+    npm install
+    ```
 
-SQLite (database will be created locally by Sequelize)
+3. **Create a .env file in the root directory to store environment variables such as server port (SQLite will be used by default without the need for a DB host or credentials):**
+    ```plaintext
+    PORT=your-preferred-port
+    ```
 
-Any IDE or code editor (e.g., VS Code)
+## Project Setup
 
-Steps to Install
-Navigate to the project directory:
+### Database Configuration
 
-bash
-cd micro-instagram-backend
-Install the dependencies:
-
-bash
-npm install
-Create a .env file in the root directory to store environment variables such as server port (SQLite will be used by default without the need for a DB host or credentials):
-
-plaintext
-PORT=your-preferred-port
-Project Setup
-Database Configuration
 Sequelize will automatically create and use an SQLite database file locally. You don’t need to set up a PostgreSQL or MySQL database server.
 
 Example for SQLite:
-
-plaintext
+```plaintext
 DB_STORAGE=./database.sqlite
 PORT=3000
+
 Migrations
 Run the migration to create the tables in the database:
-
 bash
 npx sequelize-cli db:migrate
 This will create an SQLite database file in the root directory (e.g., ./database.sqlite).
